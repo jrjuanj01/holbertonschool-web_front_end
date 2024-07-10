@@ -54,19 +54,14 @@ a[href] {
 
 a[href]:visited {
     font-style: italic;
-    text-decoration: none;
-    color: var(--text-color);
 }
 
 a[href]:hover {
     text-decoration: underline;
-    color: var(--text-color);
 }
 
 a[href]:active {
     background-color: var(--color-light-grey);
-    text-decoration: none;
-    color: var(--text-color);
 }
 
 .visually-hidden {
