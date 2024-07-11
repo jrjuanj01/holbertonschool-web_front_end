@@ -32,7 +32,7 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: 4%;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 0 3rem;
+    --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -57,26 +57,38 @@ html {
     scroll-behavior: smooth;
 }
 
+.navbar-menu {
+    float: right;
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
 nav {
-    .navbar-menu {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-    }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
 
-    .nav-item {
-        font-family: var(--nav-item-font-family);
-        font-weight: var(--nav-item-font-weight);
-        font-size: var(--nav-item-font-size);
-        letter-spacing: var(--nav-item-letter-spacing);
-        display: var(--nav-item-display);
-        margin: var(--nav-item-margin);
-    }
+.nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
 
-    .nav-link {
-        color: var(--nav-item-link-hover);
-    }
+nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+nav.nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
 
 /**
