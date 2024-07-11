@@ -1,3 +1,7 @@
+.box {
+    box-sizing: border-box;
+}
+
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -33,10 +37,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
-.box {
-    box-sizing: border-box;
-}
 
 html {
     font-size: 62.5%;
