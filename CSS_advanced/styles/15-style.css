@@ -34,8 +34,13 @@
 * 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
-    box-sizing: content-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
