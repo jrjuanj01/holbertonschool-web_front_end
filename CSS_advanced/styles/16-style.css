@@ -125,5 +125,5 @@ a:active {
 
 .container {
     width: 960px;
-    margin: 1em;
+    margin: 1em auto 1em;
 }
